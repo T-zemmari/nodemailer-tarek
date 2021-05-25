@@ -42,7 +42,7 @@ app.post('/send-email', async (req, res) => {
         res.status(200).json({ status: 'success', response })
 
     } catch (err) {
-        res.status(500).json({ err: messaje.err })
+        res.status(500).json({ err: messaje.error })
     }
 
 
